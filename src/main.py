@@ -11,3 +11,6 @@ print(model.x)
 
 model.fit(X,Y)
 print(model.theta)
+
+predict=model.predict(X)
+print(predict)
