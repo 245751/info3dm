@@ -14,3 +14,6 @@ print(model.theta)
 
 predict=model.predict(X)
 print(predict)
+
+score=model.score(X,Y)
+print(score)
