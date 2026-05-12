@@ -22,7 +22,8 @@ Y_Coordinates_Noisy=Y_Coordinates+noise
 data=np.array([[x,y] for x,y in zip(X_Coordinates,Y_Coordinates)])
 df=pd.DataFrame(data,columns=["観測点","真値"])
 df["観測値"]=Y_Coordinates_Noisy
-print(df)
+df.to_csv("dataset1.tsv",index=True,sep="\t")
+exit()
 fig,ax=plt.subplots()
 ax.set_xlabel("X")
 ax.set_ylabel("Y")
